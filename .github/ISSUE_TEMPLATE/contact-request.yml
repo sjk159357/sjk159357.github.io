@@ -1,0 +1,80 @@
+name: Contact Request
+description: Business inquiry, partnership request, or job application for Linze Technology Co., Ltd.
+title: "[Contact] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out to Linze Technology Co., Ltd.
+
+        This GitHub form is the primary public contact channel for the website. Do not submit passwords, ID numbers, bank details, resumes with sensitive personal identifiers, or other confidential information here.
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      description: Choose the category that best matches your request.
+      options:
+        - General business inquiry
+        - Partnership request
+        - Job application
+        - Media or collaboration request
+    validations:
+      required: true
+
+  - type: dropdown
+    id: business_unit
+    attributes:
+      label: Business unit
+      description: Select the division most relevant to your message.
+      options:
+        - Digital Asset Quantitative Trading
+        - Metaverse Development
+        - Embodied Intelligence Scenario Training
+        - Web4 Environment Blueprinting
+        - General / Corporate
+    validations:
+      required: true
+
+  - type: input
+    id: full_name
+    attributes:
+      label: Your name
+      placeholder: Jane Doe
+    validations:
+      required: true
+
+  - type: input
+    id: contact_method
+    attributes:
+      label: Preferred contact method
+      description: Provide a safe way to reply, such as a Telegram handle, GitHub username, or business email.
+      placeholder: @example or business@example.com
+    validations:
+      required: true
+
+  - type: input
+    id: role_interest
+    attributes:
+      label: Role or topic
+      description: For hiring requests, enter the role title. For other messages, enter the topic.
+      placeholder: Quantitative Research Analyst
+    validations:
+      required: true
+
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: Share the details of your inquiry or application.
+      placeholder: Tell us about your background, your request, and why you are reaching out.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this form creates a public GitHub issue and I will not submit sensitive private information.
+          required: true
