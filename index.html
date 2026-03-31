@@ -286,9 +286,41 @@
           </article>
           <article class="profile-card">
             <p class="profile-label">Primary Contact</p>
-            <p class="profile-value">Protected Channel</p>
+            <p class="profile-value">GitHub Contact Form</p>
             <p class="profile-text">
-              Company inquiries, partnership requests, and job applications are routed through the same founder-led contact channel.
+              Company inquiries, partnership requests, and job applications are routed through a GitHub-hosted intake flow instead of direct email.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section delivery-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Delivery Profile</p>
+          <h2>Optimized as a pure static website for direct GitHub Pages delivery.</h2>
+          <p class="section-text">
+            This version removes external font dependencies, third-party scripts, and computer-hosted tunnels.
+            All assets are served locally from the repository so visitors access GitHub Pages directly, with fewer cross-border dependency risks.
+          </p>
+        </div>
+
+        <div class="operations-grid">
+          <article class="operation-card">
+            <h3>No External Font Requests</h3>
+            <p>
+              Typography now relies on system serif and sans-serif stacks, avoiding Google Fonts and reducing slow or blocked asset requests.
+            </p>
+          </article>
+          <article class="operation-card">
+            <h3>All Assets Local</h3>
+            <p>
+              The logo, styles, and scripts are self-contained in the repository, which keeps the site lightweight and easier to load from GitHub Pages.
+            </p>
+          </article>
+          <article class="operation-card">
+            <h3>Direct GitHub Delivery</h3>
+            <p>
+              Visitors now reach GitHub Pages itself rather than a tunnel into your own device, which is both simpler and materially safer.
             </p>
           </article>
         </div>
@@ -299,8 +331,8 @@
           <p class="eyebrow">Careers</p>
           <h2>Recruitment is open across every business unit.</h2>
           <p class="section-text">
-            Every division is hiring. Candidates may apply directly to the founder and HR lead via email.
-            Use a clear subject line with the role title and business unit when applying.
+            Every division is hiring. Candidates can submit applications and business inquiries through the GitHub contact form.
+            The form routes everything into a single public workflow without exposing a direct email address on the page.
           </p>
         </div>
 
@@ -313,7 +345,7 @@
               <li>Execution Systems Engineer</li>
               <li>Risk Analytics Specialist</li>
             </ul>
-            <p class="career-footer">Apply through the protected founder contact | Subject: Quant Trading Application</p>
+            <p class="career-footer">Apply through the GitHub contact form | Division: Quant Trading</p>
           </article>
 
           <article class="career-card">
@@ -324,7 +356,7 @@
               <li>3D Environment Designer</li>
               <li>Technical Artist</li>
             </ul>
-            <p class="career-footer">Apply through the protected founder contact | Subject: Metaverse Team Application</p>
+            <p class="career-footer">Apply through the GitHub contact form | Division: Metaverse Development</p>
           </article>
 
           <article class="career-card">
@@ -335,7 +367,7 @@
               <li>Scenario Training Designer</li>
               <li>Machine Learning Systems Associate</li>
             </ul>
-            <p class="career-footer">Apply through the protected founder contact | Subject: Embodied Intelligence Application</p>
+            <p class="career-footer">Apply through the GitHub contact form | Division: Embodied Intelligence</p>
           </article>
 
           <article class="career-card">
@@ -346,7 +378,7 @@
               <li>Full-Stack Experience Architect</li>
               <li>Interactive Systems Designer</li>
             </ul>
-            <p class="career-footer">Apply through the protected founder contact | Subject: Web4 Blueprinting Application</p>
+            <p class="career-footer">Apply through the GitHub contact form | Division: Web4 Blueprinting</p>
           </article>
         </div>
       </section>
@@ -354,18 +386,24 @@
       <section id="contact" class="contact-section reveal">
         <div>
           <p class="eyebrow">Contact & Recruitment</p>
-          <h2>Direct company contact, founder contact, and hiring contact are unified.</h2>
+          <h2>Direct company contact and recruitment intake now run through GitHub.</h2>
           <p>
-            For corporate inquiries, partnership opportunities, or job applications, contact Lin Zetian directly.
-            The current website is designed to resemble a formal corporate site while remaining a concept build.
+            For corporate inquiries, partnership opportunities, or job applications, use the GitHub contact form.
+            The site stays fully static on GitHub Pages, and all visitor traffic goes directly to GitHub rather than your computer.
           </p>
         </div>
 
         <div class="contact-actions">
-          <button id="reveal-email-button" class="button button-primary" type="button">Reveal Contact Email</button>
-          <button id="copy-email-button" class="button button-secondary" type="button">Copy Email</button>
+          <a
+            class="button button-primary"
+            href="https://github.com/sjk159357/sjk159357.github.io/issues/new?template=contact-request.yml"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open GitHub Contact Form
+          </a>
           <a class="button button-secondary" href="#careers">Review Open Roles</a>
-          <p id="email-status" class="contact-note">Management contact: Lin Zetian | Email hidden by default to reduce scraping.</p>
+          <p class="contact-note">Management contact: Lin Zetian | Form submissions are handled on GitHub and should avoid sensitive personal data.</p>
         </div>
       </section>
     </main>
